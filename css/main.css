@@ -781,7 +781,6 @@ section {
         -ms-flex-direction: row;
             flex-direction: row;
     gap: 12px;
-    width: 100%;
   }
 }
 .footer-subscribe__email {
@@ -802,6 +801,11 @@ section {
   .footer-subscribe__email {
     margin-right: 12px;
     width: 450px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .footer-subscribe__email {
+    max-width: 358px;
   }
 }
 .footer-subscribe__email:focus {

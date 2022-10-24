@@ -188,7 +188,7 @@ letter-spacing: 0.03em;
     @include destop{
         flex-direction: row;
     gap: 12px;
-    width: 358px;
+   
     }
 }
 &__email{
@@ -207,7 +207,10 @@ letter-spacing: 0.03em;
   outline: none;
   @include tablet{
 margin-right: 12px;
-//  width: 358px;
+ width: 450px;
+ @include destop{
+   max-width: 358px;
+ }
   }
   
 }
