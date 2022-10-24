@@ -1,0 +1,112 @@
+.team {
+  background-color: var(--background-color-2);
+  padding: 60px 0px;
+    @include destop{
+  padding: 94px 0px;
+  }
+  &__title{
+  margin-bottom: 30px;
+  color: var(--title-text-color);
+font-family: 'Roboto';
+@include font(28px, 700, 1.17);
+text-align: center;
+  letter-spacing: 0.03em;
+}
+
+&__list{
+gap: 30px;
+ @include tablet{
+  flex-basis: calc((100% - 30px)/2);
+  justify-content: center;
+  display: flex;
+    flex-wrap: wrap;
+   
+
+
+    }
+     @include destop{
+      flex-basis: calc((100% - 30px)/4);
+    
+     }
+}
+ }
+ @include destop {.team__title{
+  margin-bottom: 50px;
+ @include font(36px, 700, 1.16);}}
+  .team-card__img{
+    position: relative;
+    width:100%;
+    overflow: hidden;
+  @include tablet{
+    width: 354px;}
+  @include destop{
+    width: 270px;}
+  }
+  .team-card__img img{
+   width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    height: auto;
+  }
+  
+ .team-card{
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+  background-color: var(--secondary-text-color);
+ margin-bottom: 30px;
+  @include tablet{
+   margin-bottom: 0px;}
+&__description{
+padding-top: 30px;
+padding-bottom: 30px;
+
+}
+
+&__title{
+ 
+  font-family: "Roboto", sans-serif;
+    @include font(16px, 500, 1.19);
+  
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  text-align: center;
+}
+&__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+ margin-top: 10px;
+}
+}
+.social-list {
+   display: flex;
+   gap: 10px;
+   justify-content: center;
+   padding-top: 16px;
+
+&__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--secondary-text-color);
+  fill: var(--icon-color);
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__link:hover,
+&__link:focus {
+ @include destop{fill: var(--secondary-text-color);
+  background-color: var(--accent-color);  }
+  
+}
+&__icon{
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+}
