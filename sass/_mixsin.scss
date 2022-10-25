@@ -8,7 +8,7 @@
     height: $h;
 
 }
-@mixin mobile  { @media screen and (min-width: 450px){
+@mixin mobile  { @media screen and (min-width: 480px){
     @content;
     
 }

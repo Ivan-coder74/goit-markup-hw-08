@@ -30,8 +30,12 @@
 
 }
 &__item {
+  @media screen and (min-width: 320px){
+width: 290px;
+  }
+  @include mobile{
     height: 92px;
- width: 210px;
+ width: 210px; }
  @include tablet{
 width: 226px;
  }
