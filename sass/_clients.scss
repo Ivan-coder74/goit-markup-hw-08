@@ -20,6 +20,7 @@
   gap:30px;
   justify-content: space-around;
  
+ 
 //   @include tablet{
 // flex-basis: ((100%-90px)/3);
 //   }
@@ -29,9 +30,14 @@
 
 }
 &__item {
+    height: 92px;
+ width: 210px;
+ @include tablet{
+width: 226px;
+ }
+ @include destop{ width: 170px;}
  
-  width: 170px;
-  height: 92px;
+
 }
 
 &__link {
